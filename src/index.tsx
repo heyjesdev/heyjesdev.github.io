@@ -1,4 +1,6 @@
-import "./index.css";
 import van from "@packages/mini-van";
+import "./index.css";
 
-van.add(document.body, <span>Hello World!</span>);
+import Layout from "@components/layout";
+
+van.add(document.body, <Layout>Hello World!</Layout>);

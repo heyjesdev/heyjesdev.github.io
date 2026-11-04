@@ -1,0 +1,21 @@
+@import "semantic-props";
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: light dark;
+	--theme: light;
+	@media (prefers-color-scheme: dark) {
+		--theme: dark;
+	}
+}
+
+:where(semantic-props[version="3"]) {
+	--primary-color: var(--pink);
+	--secondary-color: var(--white);
+	@container style(--theme: dark) {
+		--primary-color: var(--black);
+	}
+}
