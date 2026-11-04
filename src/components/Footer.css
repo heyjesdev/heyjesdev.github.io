@@ -1,0 +1,30 @@
+.footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: end;
+	align-items: center;
+	gap: var(--3x-small) var(--small);
+	inline-size: min(var(--3x-large-container), 100%);
+	font-family: var(--body-family);
+	font-size: var(--x-small-font);
+	padding: min(var(--margin-size), var(--3x-large));
+	margin-inline: auto;
+	animation: footer-timeline linear both;
+	animation-timeline: view(block);
+	animation-range: entry entry;
+}
+
+.footer-copyright {
+	display: block;
+	color: var(--secondary-600);
+	flex: 0 0 auto;
+	@container style(--theme: dark) {
+		color: var(--secondary-400);
+	}
+}
+
+@keyframes footer-timeline {
+	from {
+		opacity: 0;
+	}
+}

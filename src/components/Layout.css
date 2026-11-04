@@ -1,22 +1,20 @@
-@scope (.layout) to (.component) {
-	& {
-		position: absolute;
-		inset: 0;
-		display: block;
-		background-color: var(--primary-100);
-		color: var(--black);
-		font-family: var(--body-family);
-		font-size: var(--medium-font);
-		font-weight: var(--regular-weight);
-		line-height: var(--normal-line);
-		word-break: break-word;
-		margin: 0;
-		scroll-behavior: smooth;
-		overflow-x: hidden;
-		overflow-y: auto;
-		@container style(--theme: dark) {
-			background-color: var(--primary-900);
-			color: var(--white);
-		}
+.layout {
+	position: absolute;
+	inset: 0;
+	display: block;
+	background-color: var(--primary-100);
+	color: var(--black);
+	font-family: var(--body-family);
+	font-size: var(--medium-font);
+	font-weight: var(--regular-weight);
+	line-height: var(--normal-line);
+	word-break: break-word;
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: auto;
+	@container style(--theme: dark) {
+		background-color: var(--primary-900);
+		color: var(--white);
 	}
 }

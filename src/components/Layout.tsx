@@ -5,7 +5,7 @@ interface Layout {
 }
 
 export default ({ children }: Layout) => (
-	<semantic-props version="3" class="layout component">
+	<semantic-props version="3" class="layout">
 		{children}
 	</semantic-props>
 );
