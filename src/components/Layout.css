@@ -3,7 +3,7 @@
 		position: absolute;
 		inset: 0;
 		display: block;
-		background-color: var(--white);
+		background-color: var(--primary-100);
 		color: var(--black);
 		font-family: var(--body-family);
 		font-size: var(--medium-font);
