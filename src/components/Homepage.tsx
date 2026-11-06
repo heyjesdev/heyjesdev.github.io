@@ -1,14 +1,11 @@
-import "./HomePage.css";
-import Layout from "./Layout";
+import "./Homepage.css";
 import Footer from "./Footer";
 
 export default () => (
 	<semantic-props version="3">
-		<Layout>
-			<article class="homepage">
-				<main>...</main>
-				<Footer />
-			</article>
-		</Layout>
+		<article class="homepage">
+			<main>...</main>
+			<Footer />
+		</article>
 	</semantic-props>
 );
