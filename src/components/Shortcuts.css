@@ -1,6 +1,6 @@
 .shortcuts {
 	position: sticky;
-	inset-block: var(--3x-large);
+	inset-block: min(var(--margin-size), var(--x-large));
 	z-index: var(--z-sticky);
 	display: block;
 	padding-inline: min(var(--margin-size), var(--9x-large));
