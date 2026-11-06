@@ -7,7 +7,7 @@
 	inline-size: min(var(--3x-large-container), 100%);
 	font-family: var(--body-family);
 	font-size: var(--x-small-font);
-	padding: min(var(--margin-size), var(--3x-large));
+	padding: min(var(--margin-size), var(--x-large));
 	margin-inline: auto;
 	animation: footer-timeline linear both;
 	animation-timeline: view(block);
@@ -16,11 +16,8 @@
 
 .footer-copyright {
 	display: block;
-	color: var(--secondary-600);
+	color: var(--low-contrast-color);
 	flex: 0 0 auto;
-	@container style(--theme: dark) {
-		color: var(--secondary-400);
-	}
 }
 
 @keyframes footer-timeline {

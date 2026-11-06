@@ -5,16 +5,12 @@
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	border-block-end: 1px var(--line) var(--primary-200);
-	background-image: linear-gradient(var(--white), var(--primary-100));
+	border-block-end: 1px var(--line) var(--middleground-color);
+	background-color: var(--background-color);
 	gap: var(--medium) min(var(--margin-size), var(--3x-large));
 	padding: min(var(--margin-size), var(--9x-large));
 	margin: 0;
 	overflow: clip;
-	@container style(--theme: dark) {
-		background-image: linear-gradient(var(--black), var(--primary-900));
-		border-color: var(--primary-800);
-	}
 }
 
 .profile-art {
@@ -28,6 +24,9 @@
 	mask: linear-gradient(black, transparent);
 	mask-type: alpha;
 	pointer-events: none;
+	@container style(--theme: dark) {
+		opacity: 0.2;
+	}
 }
 
 .profile-header,
@@ -51,14 +50,10 @@
 	max-inline-size: 20%;
 	max-block-size: var(--2x-small-container);
 	border-radius: var(--small-radius);
-	border: 1px var(--line) var(--primary-200);
-	background-color: var(--white);
+	border: 1px var(--line) var(--foreground-color);
+	background-color: var(--background-color);
 	overflow: hidden;
 	flex: 0 0 auto;
-	@container style(--theme: dark) {
-		background-color: var(--primary-800);
-		border-color: var(--primary-700);
-	}
 }
 
 .profile-header {
@@ -72,12 +67,9 @@
 	line-height: var(--short-line);
 	font-family: var(--display-family);
 	font-weight: var(--heavy-weight);
-	font-size: var(--4x-large-font);
-	color: var(--black);
+	font-size: var(--3x-large-font);
+	color: var(--high-contrast-color);
 	margin-block: var(--3x-small);
-	@container style(--theme: dark) {
-		color: var(--white);
-	}
 }
 
 .profile-tagline {
@@ -85,11 +77,8 @@
 	font-family: var(--display-family);
 	font-weight: var(--light-weight);
 	font-size: var(--large-font);
-	color: var(--secondary-900);
+	color: var(--medium-contrast-color);
 	margin-block: 0 var(--x-small);
-	@container style(--theme: dark) {
-		color: var(--secondary-200);
-	}
 }
 
 .profile-bio {
@@ -97,9 +86,6 @@
 	font-family: var(--body-family);
 	font-weight: var(--regular-weight);
 	font-size: var(--medium-font);
-	color: var(--secondary-800);
+	color: var(--low-contrast-color);
 	margin-block: 0;
-	@container style(--theme: dark) {
-		color: var(--secondary-300);
-	}
 }

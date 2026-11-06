@@ -3,9 +3,8 @@
 	inset: 0;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-between;
-	background-color: var(--primary-100);
-	color: var(--black);
+	background-color: var(--background-color);
+	color: var(--high-contrast-color);
 	font-family: var(--body-family);
 	font-size: var(--medium-font);
 	font-weight: var(--regular-weight);
@@ -15,8 +14,8 @@
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	overflow-y: auto;
-	@container style(--theme: dark) {
-		background-color: var(--primary-900);
-		color: var(--white);
-	}
+}
+
+.homepage-content {
+	flex: 1 0 auto;
 }

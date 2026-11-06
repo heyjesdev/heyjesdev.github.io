@@ -1,0 +1,164 @@
+[
+	{
+		"title": "My Work & Profiles",
+		"items": [
+			{
+				"title": "Semantic Props",
+				"description": "CSS that respects the platform—not run from it.",
+				"url": "https://semantic-props.style/"
+			},
+			{
+				"title": "Named Relative Colors",
+				"description": "CSS named colors supercharged by the relative colors specification.",
+				"url": "https://github.com/heyjesdev/named-relative-colors"
+			},
+			{
+				"title": "Precolor",
+				"description": "Powerful preprocessor tools for an accessible color palette.",
+				"url": "https://github.com/heyjesdev/Precolor"
+			},
+			{
+				"title": "Github",
+				"url": "https://github.com/heyjesdev"
+			}
+		]
+	},
+	{
+		"title": "Development Tools & Technologies",
+		"items": [
+			{
+				"title": "Bun",
+				"description": "A fast JavaScript runtime, package manager, and build tool.",
+				"url": "https://bun.sh/"
+			},
+			{
+				"title": "TypeScript",
+				"description": "JavaScript with static types and a better development experience.",
+				"url": "https://www.typescriptlang.org/"
+			},
+			{
+				"title": "JSX / TSX",
+				"description": "HTML-like syntax for composing interfaces without committing to a framework.",
+				"url": "https://www.typescriptlang.org/docs/handbook/jsx.html"
+			},
+			{
+				"title": "SCSS",
+				"description": "A CSS preprocessor that extends CSS with variables, nesting, mixins, and reusable authoring tools.",
+				"url": "https://sass-lang.com/"
+			},
+			{
+				"title": "PostCSS",
+				"description": "A tool for transforming CSS with a flexible plugin-based ecosystem.",
+				"url": "https://postcss.org/"
+			},
+			{
+				"title": "VanJS",
+				"description": "Lightweight DOM construction with minimal overhead.",
+				"url": "https://vanjs.org/"
+			},
+			{
+				"title": "Svelte",
+				"description": "A compiler-based UI framework for building reactive interfaces with a concise component model.",
+				"url": "https://svelte.dev/"
+			},
+			{
+				"title": "Vite",
+				"description": "A modern frontend build tool with a fast development server and optimized production builds.",
+				"url": "https://vite.dev/"
+			}
+		]
+	},
+	{
+		"title": "Favourite Games",
+		"items": [
+			{
+				"title": "Horizon Zero Dawn",
+				"description": "Explore a post-apocalyptic world where humanity lives among colossal machines, uncovering the mysteries of a lost civilization.",
+				"url": "https://www.playstation.com/en-us/games/horizon-zero-dawn/"
+			},
+			{
+				"title": "Sly 2: Band of Thieves",
+				"description": "A stylish stealth-platformer following Sly Cooper and his crew through elaborate heists, memorable characters, and globe-spanning adventures.",
+				"url": "https://store.playstation.com/en-us/product/UP9000-PPSA22287_00-SCUS973160000000/"
+			},
+			{
+				"title": "Ghost of Tsushima",
+				"description": "Experience a beautiful open-world samurai adventure through feudal Japan, following Jin Sakai's struggle to protect his home.",
+				"url": "https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_DIRECTORS_CUT/"
+			},
+			{
+				"title": "STAR WARS: Knights of the Old Republic",
+				"description": "An iconic role-playing adventure set thousands of years before the films, where your choices shape your journey through the Star Wars galaxy.",
+				"url": "https://store.steampowered.com/app/32370/STAR_WARS_Knights_of_the_Old_Republic/"
+			},
+			{
+				"title": "The Legend of Zelda: Majora's Mask",
+				"description": "A hauntingly atmospheric adventure built around a repeating three-day cycle, filled with memorable characters, secrets, and emotional storytelling.",
+				"url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Majora%27s_Mask"
+			},
+			{
+				"title": "Super Mario Sunshine",
+				"description": "Join Mario on a tropical island adventure, using the FLUDD water-powered device to clean up Isle Delfino and uncover its mysteries.",
+				"url": "https://en.wikipedia.org/wiki/Super_Mario_Sunshine"
+			}
+		]
+	},
+	{
+		"title": "Nostalgic Let's Plays & Retrospectives",
+		"items": [
+			{
+				"title": "Best Friends Play Star Wars: KOTOR",
+				"url": "https://youtube.com/playlist?list=PL57hJfweW_2tPGxq_L5TmY09uWlLt0hJW&si=d8bvqya1BXehtn2_"
+			},
+			{
+				"title": "The Legend of Zelda: Majora's Mask - Chuggaaconroy",
+				"url": "https://www.youtube.com/playlist?list=PLF41D831CF4427BE5"
+			},
+			{
+				"title": "Super Mario Sunshine - Chuggaaconroy",
+				"url": "https://youtube.com/playlist?list=PLDBF53D2500EA9EC0&si=s8UXqTWY1fcCZvlM"
+			},
+			{
+				"title": "A Deep Dive Into Sly 2: Band of Thieves",
+				"url": "https://youtu.be/bE_PJvnaQ4E?si=SuIYP7dJeXQYhBu8"
+			},
+			{
+				"title": "The World Record History of Sly 2's Most Iconic Episode",
+				"url": "https://youtu.be/QFVQvYKpFYY?si=up9BWfwBTL4xskvu"
+			}
+		]
+	},
+	{
+		"title": "Beloved & Sacred Music",
+		"items": [
+			{
+				"title": "Celestial - Wayne Burton",
+				"url": "https://youtu.be/XwpmWmtWzs4?si=lyUeNqz0MdIkVhNV"
+			},
+			{
+				"title": "Learning for Myself - My Servant Joseph",
+				"url": "https://youtu.be/KcXQ_uitrBg?si=TBGdltFoHNdXk8Vo"
+			},
+			{
+				"title": "I'm Still Here - 1820 The Musical",
+				"url": "https://youtu.be/_6zHcwJTd8E?si=-GAbyrmkBE4puf-w"
+			},
+			{
+				"title": "Never Leave Us - He’ll Provide a Way",
+				"url": "https://youtu.be/IN9FPPjW5nM?si=YTEtRt9hOffyBWKb"
+			},
+			{
+				"title": "I am a Book - Nashville Tribute Band",
+				"url": "https://youtu.be/woHEB2lAr4s?si=-JMQjbdUzQu4HrsZ"
+			},
+			{
+				"title": "Coming Home - The Nashville Tribute Band",
+				"url": "https://youtu.be/0FuJMvEYnNk?si=s1CCgRrOqfr2x0uB"
+			},
+			{
+				"title": "Known - Rejoice in Christ",
+				"url": "https://youtu.be/yNhw7gp4JO8?si=PknHaJMJSgmApL_v"
+			}
+		]
+	}
+]
