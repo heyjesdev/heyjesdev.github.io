@@ -3,8 +3,8 @@ import { brotliCompressSync } from "node:zlib";
 import { cp, rm } from "node:fs/promises";
 import { minify } from "@minify-html/node";
 
-// Remove existing dist files:
-await rm("./dist", { recursive: true, force: true });
+// Remove existing docs files:
+await rm("./docs", { recursive: true, force: true });
 
 /** Files processed by `Bun.build`. */
 const processed = new Set<string>();
@@ -15,7 +15,7 @@ for (const file of new Bun.Glob("**/*.html").scanSync({ cwd: "./src" })) {
 	const result = await Bun.build({
 		entrypoints: [`./src/${file}`],
 		root: "./src",
-		outdir: "./dist",
+		outdir: "./docs",
 		compile: true,
 		target: "browser",
 		minify: true,
@@ -38,7 +38,7 @@ for (const file of new Bun.Glob("**/*.html").scanSync({ cwd: "./src" })) {
 	}
 
 	/** Build index.html contents. */
-	const buildHTML = await Bun.file(`./dist/${file}`).text();
+	const buildHTML = await Bun.file(`./docs/${file}`).text();
 
 	/** Minified index.html buffer. */
 	const output = minify(Buffer.from(buildHTML), {
@@ -60,7 +60,7 @@ for (const file of new Bun.Glob("**/*.html").scanSync({ cwd: "./src" })) {
 	});
 
 	// Overwrite build file with output contents:
-	await Bun.write(`./dist/${file}`, output);
+	await Bun.write(`./docs/${file}`, output);
 
 	/** Data compressed over gzip. */
 	const gzip = Bun.gzipSync(Buffer.from(output));
@@ -74,7 +74,7 @@ for (const file of new Bun.Glob("**/*.html").scanSync({ cwd: "./src" })) {
 }
 
 // Copy non-processed src files:
-await cp("./src", "./dist", {
+await cp("./src", "./docs", {
 	recursive: true,
 	filter: source => !processed.has(source)
 });
