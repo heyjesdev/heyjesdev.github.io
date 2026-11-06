@@ -1,0 +1,105 @@
+.profile {
+	position: relative;
+	isolation: isolate;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	border-block-end: 1px var(--line) var(--primary-200);
+	background-image: linear-gradient(var(--white), var(--primary-100));
+	gap: var(--medium) min(var(--margin-size), var(--3x-large));
+	padding: min(var(--margin-size), var(--9x-large));
+	margin: 0;
+	overflow: clip;
+	@container style(--theme: dark) {
+		background-image: linear-gradient(var(--black), var(--primary-900));
+		border-color: var(--primary-800);
+	}
+}
+
+.profile-art {
+	position: absolute;
+	z-index: var(--z-bottom);
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.3;
+	mask: linear-gradient(black, transparent);
+	mask-type: alpha;
+	pointer-events: none;
+}
+
+.profile-header,
+.profile-image {
+	position: sticky;
+	inset-block-start: var(--large);
+}
+
+.profile-title,
+.profile-tagline,
+.profile-bio {
+	transition: all var(--fast-time) var(--ease-out);
+	@media (prefers-reduced-motion) {
+		transition: none;
+	}
+}
+
+.profile-image {
+	width: auto;
+	height: auto;
+	max-inline-size: 20%;
+	max-block-size: var(--2x-small-container);
+	border-radius: var(--small-radius);
+	border: 1px var(--line) var(--primary-200);
+	background-color: var(--white);
+	overflow: hidden;
+	flex: 0 0 auto;
+	@container style(--theme: dark) {
+		background-color: var(--primary-800);
+		border-color: var(--primary-700);
+	}
+}
+
+.profile-header {
+	inline-size: min(var(--large-container), 100%);
+	max-inline-size: max-content;
+	text-shadow: var(--light-text-shadow);
+	flex: 0 1 auto;
+}
+
+.profile-title {
+	line-height: var(--short-line);
+	font-family: var(--display-family);
+	font-weight: var(--heavy-weight);
+	font-size: var(--4x-large-font);
+	color: var(--black);
+	margin-block: var(--3x-small);
+	@container style(--theme: dark) {
+		color: var(--white);
+	}
+}
+
+.profile-tagline {
+	line-height: var(--short-line);
+	font-family: var(--display-family);
+	font-weight: var(--light-weight);
+	font-size: var(--large-font);
+	color: var(--secondary-900);
+	margin-block: 0 var(--x-small);
+	@container style(--theme: dark) {
+		color: var(--secondary-200);
+	}
+}
+
+.profile-bio {
+	line-height: var(--normal-line);
+	font-family: var(--body-family);
+	font-weight: var(--regular-weight);
+	font-size: var(--medium-font);
+	color: var(--secondary-800);
+	margin-block: 0;
+	@container style(--theme: dark) {
+		color: var(--secondary-300);
+	}
+}

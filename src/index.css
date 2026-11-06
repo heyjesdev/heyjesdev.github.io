@@ -12,6 +12,9 @@ semantic-props[version="3"] {
 	--primary-color: var(--pink);
 	--secondary-color: var(--white);
 	--theme: light;
+	--display-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+	--body-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+	--brand-family:  Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
 	@media (prefers-color-scheme: dark) {
 		--theme: dark;
 	}
