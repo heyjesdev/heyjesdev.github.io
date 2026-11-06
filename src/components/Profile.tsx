@@ -5,14 +5,14 @@ export default () => (
 		<img
 			class="profile-art"
 			src="/images/profile-art.avif"
-			loading="lazy"
+			fetchpriority="high"
 			decoding="async"
 			alt=""
 		/>
 		<img
 			class="profile-image"
 			src="/images/profile.avif"
-			loading="lazy"
+			fetchpriority="high"
 			decoding="async"
 			alt="Myself, Jess!"
 		/>
