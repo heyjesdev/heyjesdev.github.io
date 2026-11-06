@@ -7,7 +7,8 @@
 	inline-size: min(var(--3x-large-container), 100%);
 	font-family: var(--body-family);
 	font-size: var(--x-small-font);
-	padding: min(var(--margin-size), var(--x-large));
+	padding-inline: var(--margin-size);
+	padding-block: min(var(--margin-size), var(--x-large));
 	margin-inline: auto;
 	animation: footer-timeline linear both;
 	animation-timeline: view(block);

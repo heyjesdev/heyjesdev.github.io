@@ -1,0 +1,42 @@
+.shortcuts {
+	position: sticky;
+	inset-block: var(--3x-large);
+	z-index: var(--z-sticky);
+	display: block;
+	padding-inline: min(var(--margin-size), var(--9x-large));
+	margin-block: var(--medium);
+	overflow: auto;
+	filter: var(--light-shadow);
+}
+
+.shortcuts-items {
+	display: flex;
+	gap: var(--x-small);
+	inline-size: max-content;
+	min-inline-size: min(var(--x-small-container), 100%);
+	margin-inline: auto;
+}
+
+.shortcuts-items-element {
+	display: block;
+	white-space: nowrap;
+	text-decoration: none;
+	font-size: var(--small-font);
+	font-family: var(--display-family);
+	font-weight: var(--bold-weight);
+	border: 1px var(--line) var(--foreground-color);
+	border-radius: var(--large-radius);
+	background-color: var(--background-color);
+	color: var(--low-contrast-color);
+	padding-inline: var(--large);
+	padding-block: var(--x-small);
+	flex: 1 0 max-content;
+	transition: color var(--normal-time) var(--ease-out);
+	&:is(:hover, :focus, :active) {
+		color: var(--high-contrast-color);
+		transition-duration: 0ms;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		transition: none;
+	}
+}
