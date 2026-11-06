@@ -6,6 +6,8 @@
 
 :root {
 	color-scheme: light dark;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 semantic-props[version="3"] {
