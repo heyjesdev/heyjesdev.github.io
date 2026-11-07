@@ -17,25 +17,27 @@ semantic-props[version="3"] {
 		--theme: dark;
 	}
 
+	/* Color: */
+	--primary-color: var(--pink);
+
 	/* Typography: */
 	--display-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	--body-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
 	--brand-family:  Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
 
 	/* Custom */
-	--background-color: var(--white);
-	--middleground-color: var(--primary-100);
-	--foreground-color: var(--primary-200);
-	--low-contrast-color: var(--secondary-600);
+	--background-color: var(--primary-100);
+	--foreground-color: var(--white);
+	--low-contrast-color: var(--primary-200);
 	--medium-contrast-color: var(--secondary-800);
 	--high-contrast-color: var(--black);
 
 	@container style(--theme: dark) {
-		--background-color: var(--black);
-		--middleground-color: var(--primary-900);
+		--primary-color: var(--gray);
+		--background-color: var(--primary-900);
 		--foreground-color: var(--primary-800);
-		--low-contrast-color: var(--secondary-400);
-		--medium-contrast-color: var(--secondary-200);
+		--low-contrast-color: var(--primary-700);
+		--medium-contrast-color: var(--secondary-300);
 		--high-contrast-color: var(--white);
 	}
 }

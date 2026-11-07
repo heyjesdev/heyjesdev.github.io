@@ -33,7 +33,7 @@
 	font-weight: var(--regular-weight);
 	line-height: var(--short-line);
 	color: var(--medium-contrast-color);
-	border-block-end: 1px var(--line) var(--middleground-color);
+	border-block-end: 1px var(--line) var(--low-contrast-color);
 	box-shadow: 0 0 0 100vi var(--background-color);
 	clip-path: inset(0 -100vi 0 -100vi);
 	padding-inline: var(--3x-small);
@@ -74,11 +74,11 @@
 	contain-intrinsic-size: var(--collections-items-columns) auto;
 	text-decoration: none;
 	border-radius: var(--small-radius);
-	border: 1px var(--line) var(--foreground-color);
-	background-color: var(--background-color);
+	border: 1px var(--line) var(--low-contrast-color);
+	background-color: var(--foreground-color);
 	box-shadow: var(--light-box-shadow);
 	padding-inline: var(--small);
-	padding-block: var(--large) var(--medium);
+	padding-block: var(--medium);
 	overflow: hidden;
 	cursor: pointer;
 	animation: collections-items-element-timeline linear both;
@@ -90,10 +90,10 @@
 	}
 	&:is(:hover, :focus, :active) {
 		transition-duration: 0ms;
-		border-color: var(--low-contrast-color);
+		border-color: var(--medium-contrast-color);
 	}
 	&:active {
-		background-color: var(--middleground-color);
+		border-color: var(--high-contrast-color);
 	}
 }
 
@@ -127,7 +127,7 @@
 .collections-items-description {
 	font-weight: var(--regular-weight);
 	font-size: var(--small-font);
-	color: var(--medium-contrast-color);
+	color: var(--high-contrast-color);
 	margin-block-end: auto;
 }
 
@@ -139,6 +139,6 @@
 	font-family: var(--body-family);
 	font-weight: var(--light-weight);
 	font-size: var(--x-small-font);
-	color: var(--low-contrast-color);
+	color: var(--medium-contrast-color);
 	overflow: hidden;
 }
