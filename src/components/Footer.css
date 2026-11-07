@@ -17,7 +17,7 @@
 
 .footer-copyright {
 	display: block;
-	color: var(--medium-contrast-color);
+	color: var(--low-contrast-color);
 	flex: 0 0 auto;
 }
 

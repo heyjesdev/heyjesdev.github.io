@@ -26,18 +26,20 @@ semantic-props[version="3"] {
 	--brand-family:  Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
 
 	/* Custom */
-	--background-color: var(--primary-100);
-	--foreground-color: var(--white);
-	--low-contrast-color: var(--primary-200);
+	--light-color: var(--white);
+	--medium-color: var(--primary-100);
+	--dark-color: var(--primary-200);
+	--low-contrast-color: var(--secondary-600);
 	--medium-contrast-color: var(--secondary-800);
 	--high-contrast-color: var(--black);
 
 	@container style(--theme: dark) {
 		--primary-color: var(--gray);
-		--background-color: var(--primary-900);
-		--foreground-color: var(--primary-800);
-		--low-contrast-color: var(--primary-700);
-		--medium-contrast-color: var(--secondary-300);
+		--light-color: var(--primary-800);
+		--medium-color: var(--primary-900);
+		--dark-color: var(--black);
+		--low-contrast-color: var(--secondary-400);
+		--medium-contrast-color: var(--secondary-200);
 		--high-contrast-color: var(--white);
 	}
 }

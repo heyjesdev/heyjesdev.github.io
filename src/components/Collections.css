@@ -26,19 +26,22 @@
 	display: flex;
 	flex-flow: row wrap;
 	gap: 0 1ch;
-	background-color: var(--background-color);
+	background-color: var(--medium-color);
 	text-shadow: var(--light-text-shadow);
 	font-size: var(--large-font);
 	font-family: var(--display-family);
 	font-weight: var(--regular-weight);
 	line-height: var(--short-line);
 	color: var(--medium-contrast-color);
-	border-block-end: 1px var(--line) var(--low-contrast-color);
-	box-shadow: 0 0 0 100vi var(--background-color);
+	border-block-end: 1px var(--line) var(--dark-color);
+	box-shadow: 0 0 0 100vi var(--medium-color);
 	clip-path: inset(0 -100vi 0 -100vi);
 	padding-inline: var(--3x-small);
 	padding-block: var(--x-small);
 	list-style: none;
+	@container style(--theme: dark) {
+		border-color: var(--light-color);
+	}
 	&::marker,
 	&::-webkit-details-marker {
 		display: none;
@@ -74,8 +77,8 @@
 	contain-intrinsic-size: var(--collections-items-columns) auto;
 	text-decoration: none;
 	border-radius: var(--small-radius);
-	border: 1px var(--line) var(--low-contrast-color);
-	background-color: var(--foreground-color);
+	border: 1px var(--line) var(--dark-color);
+	background-color: var(--light-color);
 	box-shadow: var(--light-box-shadow);
 	padding-inline: var(--small);
 	padding-block: var(--medium);
@@ -90,10 +93,7 @@
 	}
 	&:is(:hover, :focus, :active) {
 		transition-duration: 0ms;
-		border-color: var(--medium-contrast-color);
-	}
-	&:active {
-		border-color: var(--high-contrast-color);
+		border-color: var(--low-contrast-color);
 	}
 }
 
@@ -127,7 +127,7 @@
 .collections-items-description {
 	font-weight: var(--regular-weight);
 	font-size: var(--small-font);
-	color: var(--high-contrast-color);
+	color: var(--medium-contrast-color);
 	margin-block-end: auto;
 }
 
@@ -139,6 +139,6 @@
 	font-family: var(--body-family);
 	font-weight: var(--light-weight);
 	font-size: var(--x-small-font);
-	color: var(--medium-contrast-color);
+	color: var(--low-contrast-color);
 	overflow: hidden;
 }
