@@ -26,7 +26,7 @@ semantic-props[version="3"] {
 	--brand-family:  Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
 
 	/* Custom */
-	--background-color: var(--primary-50);
+	--background-color: var(--primary-100);
 	--middleground-color: var(--primary-200);
 	--foreground-color: var(--white);
 	--low-contrast-color: var(--secondary-600);
