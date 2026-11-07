@@ -5,7 +5,6 @@
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	border-block-end: 1px var(--line) var(--low-contrast-color);
 	background-color: var(--background-color);
 	gap: var(--medium) min(var(--margin-size), var(--3x-large));
 	padding: min(var(--margin-size), var(--9x-large));
