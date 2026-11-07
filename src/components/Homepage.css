@@ -3,7 +3,7 @@
 	inset: 0;
 	display: flex;
 	flex-flow: column nowrap;
-	background-color: var(--medium-color);
+	background-color: var(--background-color);
 	color: var(--high-contrast-color);
 	font-family: var(--body-family);
 	font-size: var(--medium-font);
