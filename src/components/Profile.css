@@ -5,7 +5,7 @@
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--background-color);
+	background-color: var(--primary-color);
 	gap: var(--medium) min(var(--margin-size), var(--3x-large));
 	padding: min(var(--margin-size), var(--9x-large));
 	margin: 0;
@@ -19,13 +19,10 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	opacity: 0.3;
+	mix-blend-mode: overlay;
 	mask: linear-gradient(black, transparent);
 	mask-type: alpha;
 	pointer-events: none;
-	@container style(--theme: dark) {
-		opacity: 0.2;
-	}
 }
 
 .profile-header,
@@ -49,8 +46,8 @@
 	max-inline-size: 20%;
 	max-block-size: var(--2x-small-container);
 	border-radius: var(--small-radius);
-	border: 1px var(--line) var(--middleground-color);
-	background-color: var(--foreground-color);
+	border: 1px var(--line) var(--tertiary-color);
+	background-color: var(--secondary-color);
 	overflow: hidden;
 	flex: 0 0 auto;
 }
