@@ -19,13 +19,13 @@ semantic-props[version="3"] {
 	}
 
 	/* Color: */
-	--background-color: var(--magenta-100);
-	--middleground-color: var(--magenta-200);
+	--background-color: var(--magenta-50);
+	--middleground-color: var(--magenta-100);
 	--foreground-color: var(--white);
 
 	@container style(--theme: dark) {
-		--background-color: var(--gray-900);
-		--middleground-color: var(--gray-800);
+		--background-color: var(--gray-950);
+		--middleground-color: var(--gray-900);
 		--foreground-color: var(--black);
 	}
 
