@@ -106,7 +106,7 @@
 
     "require-main-filename": ["require-main-filename@2.0.0", "", {}, "sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg=="],
 
-    "semantic-props": ["semantic-props@github:heyjesdev/semantic-props#f083454", {}, "heyjesdev-semantic-props-f083454", "sha512-ctJG0HHnjd+aRFH6iIZ7Bj0MWbSyTdkzSMEkEYl5u2ZVkyikLKYyaZvKsHEKZmECnNqIcpMjQcpyu1/KBeRkog=="],
+    "semantic-props": ["semantic-props@github:heyjesdev/semantic-props#77c21a9", {}, "heyjesdev-semantic-props-77c21a9", "sha512-6ehBneRO7koPIk40Afi9pA2RiJOtbyFDawVPW6/7O0guUPS7W+9lhlJhiaSOmFJDqysfNFyqcD2lFCmL4BIrPg=="],
 
     "set-blocking": ["set-blocking@2.0.0", "", {}, "sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw=="],
 
