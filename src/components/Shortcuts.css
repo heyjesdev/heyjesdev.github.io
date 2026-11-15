@@ -27,14 +27,18 @@
 	border: 1px var(--line) var(--middleground-color);
 	border-radius: var(--large-radius);
 	background-color: var(--foreground-color);
-	color: var(--medium-contrast-color);
+	color: var(--low-contrast-color);
 	padding-inline: var(--large);
 	padding-block: var(--x-small);
 	flex: 1 0 max-content;
-	transition: color var(--normal-time) var(--ease-out);
+	transition: all var(--normal-time) var(--ease-out);
 	&:is(:hover, :focus, :active) {
+		border-color: var(--low-contrast-color);
 		color: var(--high-contrast-color);
 		transition-duration: 0ms;
+	}
+	&:active {
+		background-color: var(--middleground-color);
 	}
 	@media (prefers-reduced-motion: reduce) {
 		transition: none;
