@@ -7,13 +7,15 @@ const shortcuts: Record<string, string> = {
 };
 
 export default () => (
-	<nav class="shortcuts">
-		<div class="shortcuts-items">
-			{Object.entries(shortcuts).map(([title, url]) => (
-				<a class="shortcuts-items-element" href={url} rel="external" target="_blank">
-					{title}
-				</a>
-			))}
-		</div>
-	</nav>
+	<semantic-props version="3">
+		<nav class="shortcuts">
+			<div class="shortcuts-items">
+				{Object.entries(shortcuts).map(([title, url]) => (
+					<a class="shortcuts-items-element" href={url} rel="external" target="_blank">
+						{title}
+					</a>
+				))}
+			</div>
+		</nav>
+	</semantic-props>
 );

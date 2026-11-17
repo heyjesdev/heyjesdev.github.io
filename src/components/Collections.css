@@ -1,7 +1,7 @@
 .collections {
 	display: block;
 	inline-size: min(var(--3x-large-container), 100%);
-	padding-inline: min(var(--margin-size), var(--9x-large));
+	padding: var(--margin-body);
 	margin-inline: auto;
 	margin-block: var(--x-large) var(--3x-large);
 	&::details-content {

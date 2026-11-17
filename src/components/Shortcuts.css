@@ -1,9 +1,9 @@
 .shortcuts {
 	position: sticky;
-	inset-block: min(var(--margin-size), var(--x-large));
+	bottom: max(env(safe-area-inset-bottom), var(--x-large));
 	z-index: var(--z-sticky);
 	display: block;
-	padding-inline: min(var(--margin-size), var(--9x-large));
+	padding: var(--margin-body);
 	margin-block: var(--medium);
 	overflow: auto;
 	filter: var(--light-shadow);
