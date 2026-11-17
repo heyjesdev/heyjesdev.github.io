@@ -11,6 +11,10 @@
     text-size-adjust: 100%;
 }
 
+body {
+	margin: 0;
+}
+
 semantic-props[version="3"] {
 	/* Query: */
 	--theme: light;

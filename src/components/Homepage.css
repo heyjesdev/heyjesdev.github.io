@@ -1,8 +1,7 @@
 .homepage {
-	position: absolute;
-	inset: 0;
 	display: flex;
 	flex-flow: column nowrap;
+	min-block-size: 100dvb;
 	background-color: var(--background-color);
 	color: var(--high-contrast-color);
 	font-family: var(--body-family);
