@@ -10,9 +10,6 @@
 	line-height: var(--normal-line);
 	word-break: break-word;
 	margin: 0;
-	scroll-behavior: smooth;
-	overflow-x: hidden;
-	overflow-y: auto;
 }
 
 .homepage-content {
