@@ -4,7 +4,7 @@
 	z-index: var(--z-sticky);
 	display: block;
 	padding: var(--margin-body);
-	margin-block: var(--medium);
+	margin-block: var(--3x-large);
 	overflow: auto;
 	filter: var(--light-shadow);
 }
