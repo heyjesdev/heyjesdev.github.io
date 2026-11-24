@@ -1,6 +1,6 @@
 .profile {
-	position: relative;
 	isolation: isolate;
+	position: relative;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -16,27 +16,28 @@
 
 .profile-art {
 	position: absolute;
+	z-index: var(--z-bottom);
 	inset: 0;
 	display: block;
 	max-inline-size: 100%;
 	block-size: 100%;
 	object-fit: cover;
 	mask-image:
-	linear-gradient(to bottom, transparent, black 40% 60%, transparent),
-	linear-gradient(to right, transparent, black 25% 75%, transparent);
+	linear-gradient(to bottom, transparent, black, transparent),
+	linear-gradient(to right, transparent, black, transparent);
 	mask-type: alpha;
 	mask-composite: intersect;
 	pointer-events: none;
-	opacity: 0.2;
-	@container style(--theme: dark) {
-		opacity: 0.1;
-	}
+	opacity: var(--low-opacity);
 }
 
 .profile-body,
 .profile-image {
 	position: sticky;
 	inset-block-start: var(--large);
+	border-radius: var(--small-radius);
+	backdrop-filter: var(--light-blur);
+	overflow: hidden;
 }
 
 .profile-image {
@@ -45,16 +46,15 @@
 	height: auto;
 	max-inline-size: 20%;
 	max-block-size: var(--2x-small-container);
-	background-color: var(--middleground-color);
-	border-radius: var(--small-radius);
 	border: 1px var(--line) var(--foreground-color);
-	overflow: hidden;
 	flex: 0 0 auto;
 }
 
 .profile-body {
 	display: block;
 	text-shadow: var(--light-text-shadow);
+	padding: var(--small);
+	margin: calc(var(--small) * -1);
 	flex: 0 1 auto;
 }
 
@@ -74,7 +74,7 @@
 	font-weight: var(--heavy-weight);
 	font-size: var(--3x-large-font);
 	color: var(--high-contrast-color);
-	margin-block: var(--3x-small);
+	margin-block: 0 var(--3x-small);
 }
 
 .profile-tagline {
