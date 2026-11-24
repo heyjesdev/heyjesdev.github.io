@@ -22,8 +22,8 @@
 	block-size: 100%;
 	object-fit: cover;
 	mask-image:
-	linear-gradient(to bottom, transparent, black 30% 70%, transparent),
-	linear-gradient(to right, transparent, black 10% 80%, transparent);
+	linear-gradient(to bottom, transparent, black 40% 60%, transparent),
+	linear-gradient(to right, transparent, black 25% 75%, transparent);
 	mask-type: alpha;
 	mask-composite: intersect;
 	pointer-events: none;
@@ -45,9 +45,9 @@
 	height: auto;
 	max-inline-size: 20%;
 	max-block-size: var(--2x-small-container);
+	background-color: var(--middleground-color);
 	border-radius: var(--small-radius);
-	border: 2px var(--line) var(--foreground-color);
-	outline: 1px var(--line) var(--middleground-color);
+	border: 1px var(--line) var(--foreground-color);
 	overflow: hidden;
 	flex: 0 0 auto;
 }
