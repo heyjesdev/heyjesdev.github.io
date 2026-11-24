@@ -38,7 +38,7 @@
 		transition-duration: 0ms;
 	}
 	&:active {
-		background-color: var(--middleground-color);
+		border-color: var(--high-contrast-color);
 	}
 	@media (prefers-reduced-motion: reduce) {
 		transition: none;

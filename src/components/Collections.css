@@ -93,7 +93,7 @@
 		border-color: var(--low-contrast-color);
 	}
 	&:active {
-		background-color: var(--middleground-color);
+		border-color: var(--high-contrast-color);
 	}
 }
 

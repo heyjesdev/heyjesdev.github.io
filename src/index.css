@@ -26,11 +26,11 @@ semantic-props[version="3"] {
 
 	/* Color: */
 	--background-color: var(--magenta-50);
-	--middleground-color: var(--magenta-200);
+	--middleground-color: var(--gray-200);
 	--foreground-color: var(--white);
 
 	@container style(--theme: dark) {
-		--background-color: var(--cyan-900);
+		--background-color: var(--cyan-950);
 		--middleground-color: var(--gray-700);
 		--foreground-color: var(--gray-800);
 	}
