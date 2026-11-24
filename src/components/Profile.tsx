@@ -17,7 +17,7 @@ export default () => (
 				decoding="async"
 				alt="Myself, Jess!"
 			/>
-			<figcaption class="profile-header">
+			<figcaption class="profile-body">
 				<h1 class="profile-title">Hey, Jess!</h1>
 				<h2 class="profile-tagline">Open Source Designer & Developer.</h2>
 				<p class="profile-bio">

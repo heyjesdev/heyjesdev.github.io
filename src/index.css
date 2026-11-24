@@ -39,4 +39,7 @@ semantic-props[version="3"] {
 	--display-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	--body-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
 	--brand-family:  Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+
+	/* Misc: */
+	--line: dashed;
 }
