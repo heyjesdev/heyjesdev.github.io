@@ -28,7 +28,10 @@
 	mask-type: alpha;
 	mask-composite: intersect;
 	pointer-events: none;
-	opacity: var(--low-opacity);
+	opacity: 0.4;
+	@container style(--theme: dark) {
+		opacity: 0.3;
+	}
 }
 
 .profile-body,
@@ -36,7 +39,6 @@
 	position: sticky;
 	inset-block-start: var(--large);
 	border-radius: var(--small-radius);
-	backdrop-filter: var(--light-blur);
 	overflow: hidden;
 }
 
