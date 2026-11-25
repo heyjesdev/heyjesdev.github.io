@@ -83,7 +83,7 @@
 	cursor: pointer;
 	animation: collections-items-element-timeline linear both;
 	animation-timeline: view(block);
-	animation-range: entry entry;
+	animation-range: entry;
 	transition: all var(--normal-time) var(--ease-out);
 	@media (prefers-reduced-motion: reduce) {
 		animation: none;

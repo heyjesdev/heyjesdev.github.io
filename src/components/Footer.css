@@ -5,7 +5,7 @@
 	margin-inline: auto;
 	animation: footer-timeline linear both;
 	animation-timeline: view(block);
-	animation-range: entry entry;
+	animation-range: entry;
 }
 
 @keyframes footer-timeline {
