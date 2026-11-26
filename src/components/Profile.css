@@ -2,22 +2,11 @@
 	isolation: isolate;
 	position: relative;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-	gap: var(--medium) var(--x-large);
-	padding: var(--margin-header);
-	padding-bottom: var(--medium);
-	margin: 0;
+	flex-flow: column nowrap;
+	justify-content: end;
 	overflow: clip;
 	&:has(.profile-art) {
-		--high-contrast-color: var(--white);
-		--medium-contrast-color: var(--gray-50);
-		--low-contrast-color: var(--gray-100);
-		min-block-size: var(--small-container);
-		background-color: var(--background-color);
-		background-image: linear-gradient(var(--black), var(--gray-700), transparent);
-		padding-bottom: var(--3x-large);
+		min-block-size: min(var(--small-container), 100vh);
 	}
 }
 
@@ -30,15 +19,12 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
-	mask-image: linear-gradient(black, transparent);
-	mask-type: alpha;
-	mask-composite: intersect;
 	pointer-events: none;
 	animation: profile-art-timeline linear both;
 	animation-timeline: view(block);
 	animation-range: exit;
 	@container style(--theme: dark) {
-		opacity: var(--medium-opacity);
+		filter: var(--low-brightness);
 	}
 }
 
@@ -50,6 +36,29 @@
 	}
 }
 
+.profile-content {
+	position: relative;
+	z-index: var(--z-top);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: var(--medium) var(--x-large);
+	padding: var(--margin-body);
+	padding-top: max(var(--margin-top), var(--x-large));
+	padding-bottom: var(--large);
+	margin: 0;
+	overflow: hidden;
+	.profile:has(.profile-art) & {
+		background-image: linear-gradient(transparent, var(--background-color));
+		backdrop-filter: var(--light-blur);
+		mask-image: linear-gradient(transparent, black var(--9x-large));
+		mask-type: alpha;
+		padding-top: max(var(--margin-top), var(--9x-large));
+		padding-bottom: var(--3x-large);
+	}
+}
+
 .profile-image {
 	display: block;
 	width: auto;
@@ -57,21 +66,23 @@
 	max-inline-size: 20%;
 	max-block-size: var(--2x-small-container);
 	border-radius: var(--small-radius);
-	background-color: var(--high-contrast-color);
-	box-shadow: var(--medium-box-shadow);
+	border: 1px var(--line) var(--middleground-color);
+	background-color: var(--foreground-color);
+	box-shadow: var(--light-box-shadow);
 	overflow: hidden;
 	flex: 0 0 auto;
+	.profile:has(.profile-art) & {
+		background-color: transparent;
+		background-color: oklch(from var(--foreground-color) l c h / var(--low-opacity));
+	}
 }
 
 .profile-body {
 	display: block;
 	inline-size: min(var(--large-container), 100%);
 	max-inline-size: max-content;
-	text-shadow: var(--medium-text-shadow);
+	text-shadow: var(--light-text-shadow);
 	flex: 0 1 auto;
-	.profile:has(.profile-art) & {
-		text-shadow: 0 0 3px var(--black), var(--light-text-shadow);
-	}
 }
 
 .profile-title,
