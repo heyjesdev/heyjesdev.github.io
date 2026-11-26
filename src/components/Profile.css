@@ -51,14 +51,11 @@
 	overflow: hidden;
 	.profile:has(.profile-art) & {
 		background-image: linear-gradient(transparent, var(--background-color));
-		backdrop-filter: var(--high-brightness) blur(1.5px);
+		backdrop-filter: blur(1.5px);
 		mask-image: linear-gradient(transparent, black var(--3x-large));
 		mask-type: alpha;
 		padding-top: max(var(--margin-top), var(--3x-large));
 		padding-bottom: var(--3x-large);
-		@container style(--theme: dark) {
-			backdrop-filter: var(--low-brightness) blur(1.5px);
-		}
 	}
 }
 
