@@ -94,7 +94,7 @@
 		transition: none;
 	}
 	.profile:has(.profile-art) & {
-		text-shadow: 0 0 0.2em var(--background-color), var(--light-text-shadow);
+		text-shadow: 0 0 0.25em var(--background-color);
 		color: var(--high-contrast-color);
 	}
 }
