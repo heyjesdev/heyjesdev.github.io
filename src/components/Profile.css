@@ -73,7 +73,7 @@
 	flex: 0 0 auto;
 	.profile:has(.profile-art) & {
 		border: none;
-		background-color: var(--high-contrast-color);
+		background-color: var(--white);
 	}
 }
 
@@ -81,7 +81,6 @@
 	display: block;
 	inline-size: min(var(--large-container), 100%);
 	max-inline-size: max-content;
-	text-shadow: var(--light-text-shadow);
 	flex: 0 1 auto;
 }
 
@@ -89,11 +88,13 @@
 .profile-tagline,
 .profile-bio {
 	display: block;
+	text-shadow: var(--light-text-shadow);
 	transition: all var(--fast-time) var(--ease-out);
 	@media (prefers-reduced-motion) {
 		transition: none;
 	}
 	.profile:has(.profile-art) & {
+		text-shadow: 0 0 0.2em var(--background-color), var(--light-text-shadow);
 		color: var(--high-contrast-color);
 	}
 }
