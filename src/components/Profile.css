@@ -102,7 +102,7 @@
 .profile-title {
 	line-height: var(--short-line);
 	font-family: var(--display-family);
-	font-weight: var(--heavy-weight);
+	font-weight: var(--bold-weight);
 	font-size: var(--3x-large-font);
 	color: var(--high-contrast-color);
 	margin-block: 0 var(--3x-small);
