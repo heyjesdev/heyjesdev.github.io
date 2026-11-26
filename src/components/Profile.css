@@ -72,8 +72,8 @@
 	overflow: hidden;
 	flex: 0 0 auto;
 	.profile:has(.profile-art) & {
-		background-color: transparent;
-		background-color: oklch(from var(--foreground-color) l c h / var(--low-opacity));
+		border: none;
+		background-color: var(--high-contrast-color);
 	}
 }
 
@@ -92,6 +92,9 @@
 	transition: all var(--fast-time) var(--ease-out);
 	@media (prefers-reduced-motion) {
 		transition: none;
+	}
+	.profile:has(.profile-art) & {
+		color: var(--high-contrast-color);
 	}
 }
 
