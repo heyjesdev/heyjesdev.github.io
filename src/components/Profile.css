@@ -52,11 +52,9 @@
 	.profile:has(.profile-art) & {
 		background-image: linear-gradient(transparent, var(--background-color));
 		backdrop-filter: var(--light-blur);
-		mask-image: linear-gradient(transparent, black var(--9x-large));
+		mask-image: linear-gradient(transparent, black var(--x-large));
 		mask-type: alpha;
-		padding-top: max(var(--margin-top), var(--9x-large));
 		padding-bottom: var(--3x-large);
-	}
 }
 
 .profile-image {
