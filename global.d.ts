@@ -1,9 +1,13 @@
-declare module "*.css";
+import type {} from "jsx-dom";
 
-declare namespace JSX {
-	type Element = any;
+declare global {
+	declare module "*.css";
+}
 
-	interface IntrinsicElements {
-		[tag: string]: any;
+declare module "jsx-dom" {
+	namespace JSX {
+		interface IntrinsicElements {
+			[key: `${string}-${string}`]: any;
+		}
 	}
 }
