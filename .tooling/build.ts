@@ -19,11 +19,7 @@ for (const file of new Bun.Glob("**/*.html").scanSync({ cwd: "./src" })) {
 		compile: true,
 		target: "browser",
 		minify: true,
-		metafile: true,
-		jsx: {
-			runtime: "automatic",
-			importSource: "jsx-runtime",
-		}
+		metafile: true
 	});
 
 	// Error out if bundle fails:

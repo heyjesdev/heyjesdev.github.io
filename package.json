@@ -15,6 +15,7 @@
 		"typescript": "^5"
 	},
 	"dependencies": {
+		"jsx-dom": "^8.1.6",
 		"semantic-props": "heyjesdev/semantic-props#v3.0.0"
 	}
 }
